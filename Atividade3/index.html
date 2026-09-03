@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa Acadêmica sobre DevSecOps</title>
+
+    <meta name="author" content="Willen Favarin">
+    <meta name="description" content="Pesquisa DevSecOps.">
+    <meta name="keywords" content="Desenvolvedor, Linux, DevSecOps, DevOps, Segurança, CI/CD, SAST, DAST, SCA, Bash, JavaScript, Python, C, TypeScript, Go, Java">
+    <link rel="stylesheet" href="./styles/devsecops.css">
+</head>
+<body>
+    <header>
+        <h1>DevSecOps: integração de segurança à cultura de DevOps</h1>
+        <p>Willen Favarin - Fatec Sorocaba</p>
+
+        <nav>
+            <ul>
+                <li><a href="#Intro">Introdução</a></li>
+                <li><a href="#Concepts">Conceitos</a></li>
+                <li><a href="#Practices">Práticas</a></li>
+                <li><a href="#Tools-Tech">Ferramentas e Tecnologias</a></li>
+                <li><a href="#Benefits-Challenges">Benefícios e Desafios</a></li>
+                <li><a href="#Conclusion">Conclusão</a></li>
+                <li><a href="#References">Referências</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="Intro">
+        <h2>Introdução ao DevSecOps</h2>
+
+        <p>
+            O desenvolvimento de software moderno caracteriza-se pela construção de aplicações complexas que combinam diferentes elementos, como componentes internos, frameworks, bibliotecas de terceiros e ferramentas de automação. Essa abordagem, aliada ao uso de tecnologias nativas em nuvem e à evolução de recursos de Inteligência Artificial (IA), permite que as organizações aumentem sua agilidade e eficiência. Entretanto, a velocidade dos ciclos de desenvolvimento e a complexidade das cadeias de suprimentos de software também introduzem novos riscos de segurança, principalmente quando vulnerabilidades presentes em componentes ou processos são propagadas para ambientes de produção. 
+        </p>
+
+        <p>
+            Nesse contexto, o DevSecOps surge como uma extensão do paradigma DevOps, buscando incorporar a segurança como parte integrante do processo de desenvolvimento e entrega de software. Em vez de tratar a segurança como uma etapa isolada realizada somente ao final do desenvolvimento, o DevSecOps propõe sua integração contínua ao longo do ciclo de vida do software. Essa abordagem permite que riscos sejam identificados e tratados de maneira mais antecipada e sistemática (Rajapakse et al., 2022). 
+        </p>
+
+        <p>
+            O National Institute of Standards and Technology (NIST) também destaca a importância da integração de práticas de segurança aos processos modernos de desenvolvimento, segurança e operações. Nesse contexto, frameworks como o Secure Software Development Framework (SSDF) fornecem práticas que podem ser incorporadas aos processos de desenvolvimento e aos pipelines de CI/CD (NIST, 2026). 
+        </p>
+
+        <p>
+            Assim, o objetivo desta pesquisa é apresentar os principais conceitos, práticas, ferramentas, benefícios e desafios relacionados ao DevSecOps, destacando a importância da integração da segurança ao ciclo de desenvolvimento de software. 
+        </p>
+    </section>
+
+    <section id="Concepts">
+        <h2>Conceitos Fundamentais</h2>
+
+        <h3>DevOps</h3>
+
+        <p>
+            DevOps é um paradigma que busca aproximar as equipes responsáveis pelo desenvolvimento de software e pelas operações de Tecnologia da Informação (TI). Seu objetivo é aumentar a agilidade das organizações e reduzir o tempo necessário para desenvolver, testar e disponibilizar aplicações. 
+        </p>
+
+        <p>
+            A abordagem promove maior colaboração entre as equipes e utiliza processos automatizados, integração contínua e entrega contínua para acelerar o ciclo de desenvolvimento. O uso crescente de tecnologias nativas em nuvem também contribuiu para a expansão das práticas DevOps, permitindo maior flexibilidade e automação dos ambientes de desenvolvimento e operação. 
+        </p>
+
+        <h3>DevSecOps</h3>
+
+        <p>
+            O DevSecOps amplia os princípios do DevOps ao incorporar a segurança como uma responsabilidade contínua durante o ciclo de desenvolvimento. Dessa forma, práticas de segurança são consideradas desde as etapas iniciais de planejamento e desenvolvimento até a implantação e operação do software. 
+        </p>
+
+        <p>
+            De acordo com Rajapakse et al. (2022), a adoção do DevSecOps envolve mudanças relacionadas a pessoas, práticas, ferramentas e infraestrutura. O objetivo é permitir que as organizações mantenham a velocidade proporcionada pelo DevOps sem deixar a segurança exclusivamente para etapas posteriores do desenvolvimento. 
+        </p>
+
+        <p>
+            O NIST também apresenta o DevSecOps como uma abordagem que integra desenvolvimento seguro, segurança e operações em processos automatizados, permitindo que controles de segurança sejam incorporados aos fluxos modernos de desenvolvimento (NIST, 2026). 
+        </p>
+
+        <h3>Diferenças entre DevOps e DevSecOps</h3>
+
+        <p>
+            Embora DevOps e DevSecOps compartilhem princípios relacionados à colaboração, automação e agilidade, existe uma diferença fundamental entre as duas abordagens. 
+        </p>
+
+        <p>
+            O DevOps concentra-se principalmente na integração entre desenvolvimento e operações, buscando melhorar a velocidade e a eficiência da entrega de software.
+        </p>
+
+        <p>
+            O DevSecOps mantém esses princípios, mas acrescenta a segurança como uma responsabilidade compartilhada ao longo de todo o processo. 
+        </p>
+
+        <p>
+            Dessa forma, a segurança deixa de ser considerada exclusivamente uma atividade posterior ao desenvolvimento e passa a fazer parte do próprio fluxo de desenvolvimento, testes, implantação e operação.
+        </p>
+
+        <h3>Integração da Segurança ao Ciclo de Desenvolvimento</h3>
+
+        <p>
+            Um dos princípios fundamentais do DevSecOps é a integração das práticas de segurança ao longo de todo o ciclo de desenvolvimento. Isso envolve a utilização de automação, padronização e ferramentas capazes de realizar verificações de segurança durante diferentes etapas do processo. 
+        </p>
+
+        <p>
+            A integração permite que vulnerabilidades sejam identificadas mais cedo, reduzindo a possibilidade de que problemas de segurança avancem para ambientes de produção. Além disso, a automação permite que as verificações acompanhem a velocidade proporcionada pelos processos de CI/CD (Souppaya et al., 2022). 
+        </p>
+    </section>
+
+    <section id="Practices">
+        <h2>Práticas do DevSecOps</h2>
+
+        <h3>Shift Left </h3>
+
+        <p>
+            O conceito de Shift Left consiste em antecipar as atividades de segurança para as fases iniciais do desenvolvimento. Em vez de esperar até que o software esteja praticamente concluído para realizar testes de segurança, as organizações incorporam verificações desde as etapas de desenvolvimento e integração. 
+        </p>
+
+        <p>
+            Essa prática possibilita a identificação antecipada de vulnerabilidades, permitindo que os desenvolvedores corrijam problemas antes que eles avancem para etapas posteriores do processo. Dessa maneira, a segurança passa a fazer parte do fluxo de desenvolvimento, em vez de funcionar como uma atividade isolada (Rajapakse et al., 2022). 
+        </p>
+
+        <h3>Automação de Segurança</h3>
+
+        <p>
+            A automação é um dos elementos fundamentais do DevSecOps, principalmente devido à velocidade dos ciclos modernos de desenvolvimento. A realização manual de todas as verificações de segurança pode criar gargalos e dificultar a manutenção de processos rápidos de entrega. 
+        </p>
+
+        <p>
+            Por meio da automação, testes e verificações de segurança podem ser executados de maneira sistemática durante diferentes etapas do pipeline. Isso permite maior consistência na aplicação dos controles e reduz a dependência de intervenções manuais (NIST, 2026). 
+        </p>
+
+        <h3>Segurança em CI/CD</h3>
+
+        <p>
+            Os pipelines de Integração Contínua e Entrega Contínua (CI/CD) permitem automatizar etapas como compilação, testes, empacotamento e implantação do software. 
+        </p>
+
+        <p>
+            No DevSecOps, práticas de segurança podem ser incorporadas diretamente nesses pipelines. Dessa forma, os componentes e artefatos produzidos durante o processo podem ser submetidos a verificações antes de avançarem para as etapas seguintes. 
+        </p>
+
+        <p>
+            O NIST destaca a importância da integração da segurança aos pipelines CI/CD, especialmente no contexto da proteção da cadeia de suprimentos de software (Chandramouli et al., 2024). 
+        </p>
+
+        <h3>Monitoramento Contínuo</h3>
+
+        <p>
+            O monitoramento contínuo permite acompanhar a postura de segurança dos sistemas durante sua operação. Essa prática contribui para a identificação de mudanças, vulnerabilidades e outros riscos que podem surgir depois que uma aplicação é implantada. 
+        </p>
+
+        <p>
+            No contexto do DevSecOps, o monitoramento complementa as verificações realizadas durante o desenvolvimento, permitindo que a segurança seja considerada também durante a fase operacional do software (NIST, 2026). 
+        </p>
+
+        <h3>Identificação e Correção de Vulnerabilidades</h3>
+
+        <p>
+            A identificação e a correção de vulnerabilidades são atividades fundamentais do DevSecOps. As ferramentas de segurança podem detectar problemas durante diferentes etapas do desenvolvimento, permitindo que as equipes avaliem e priorizem os riscos identificados. 
+        </p>
+
+        <p>
+            Uma abordagem baseada em risco é importante porque nem todas as vulnerabilidades possuem o mesmo impacto. Assim, fatores como probabilidade de exploração e impacto potencial podem ser considerados para determinar a prioridade de correção (Souppaya et al., 2022). 
+        </p>
+    </section>
+
+    <section id="Tools-Tech">
+        <h2>Ferramentas e Tecnologias</h2>
+
+        <h3>SAST (Static Application Security Testing)</h3>
+
+        <p>
+            O Static Application Security Testing (SAST) consiste na análise estática de aplicações com o objetivo de identificar padrões de código potencialmente inseguros. Esse tipo de teste pode ser realizado durante as etapas iniciais do desenvolvimento, inclusive integrado ao ambiente de desenvolvimento utilizado pelos programadores. 
+        </p>
+
+        <p>
+            Por atuar sobre o código sem depender necessariamente da execução da aplicação, o SAST está diretamente relacionado à prática de Shift Left. Sua integração aos processos de desenvolvimento permite que determinadas vulnerabilidades sejam identificadas antes que o software avance para etapas posteriores do pipeline (OWASP Foundation, 2025). 
+        </p>
+
+        <h3>DAST (Dynamic Application Security Testing)</h3>
+
+        <p>
+            O Dynamic Application Security Testing (DAST) realiza testes sobre uma aplicação em execução. Diferentemente do SAST, o DAST não depende da análise direta do código-fonte, permitindo avaliar o comportamento da aplicação a partir de uma perspectiva externa. 
+        </p>
+
+        <p>
+            Esse tipo de teste pode ser utilizado para identificar vulnerabilidades relacionadas ao comportamento da aplicação, incluindo problemas de validação de entrada, autenticação e outras falhas que podem ser observadas durante sua execução. Ferramentas como o OWASP ZAP são exemplos de tecnologias utilizadas para testes dinâmicos de segurança (OWASP Foundation, 2025). 
+        </p>
+
+        <h3>SCA (Software Composition Analysis)</h3>
+
+        <p>
+            O Software Composition Analysis (SCA) é utilizado para analisar componentes de terceiros, como bibliotecas e outros elementos de código aberto utilizados por uma aplicação. 
+        </p>
+
+        <p>
+            Essa prática é especialmente relevante para a segurança da cadeia de suprimentos de software, uma vez que vulnerabilidades presentes em dependências externas podem afetar aplicações que utilizam esses componentes. O SCA pode contribuir para identificar componentes vulneráveis e fornecer maior visibilidade sobre as dependências utilizadas no software. 
+        </p>
+
+        <p>
+            A análise de componentes também está relacionada ao uso de Software Bill of Materials (SBOM), que fornece informações sobre os componentes presentes em um produto de software (Chandramouli et al., 2024). 
+        </p>
+
+        <h3>Segurança de Containers</h3>
+
+        <p>
+            Containers são utilizados para empacotar aplicações e suas dependências em ambientes isolados, sendo uma tecnologia amplamente associada a arquiteturas modernas e ambientes de computação em nuvem. 
+        </p>
+
+        <p>
+            Apesar dos benefícios proporcionados pelos containers, sua utilização também introduz riscos específicos relacionados às imagens, ao ambiente de execução, ao host e aos mecanismos de orquestração. O NIST recomenda práticas de segurança que considerem esses diferentes componentes, incluindo a avaliação das imagens utilizadas e a proteção da infraestrutura que executa os containers (Souppaya et al., 2017). 
+        </p>
+
+        <p>
+            No contexto do DevSecOps, verificações de segurança podem ser incorporadas ao pipeline para analisar imagens e componentes antes de sua implantação.
+        </p>
+
+        <h3>Segurança em Pipelines CI/CD</h3>
+
+        <p>
+            A segurança dos próprios pipelines CI/CD é outro aspecto importante do DevSecOps. Como esses pipelines controlam processos responsáveis pela construção, teste e implantação do software, sua proteção é essencial para preservar a integridade dos artefatos produzidos. 
+        </p>
+
+        <p>
+            O NIST SP 800-204D apresenta estratégias para integrar a segurança da cadeia de suprimentos aos pipelines DevSecOps, considerando aspectos como integridade, procedência e proteção dos componentes utilizados durante o processo de desenvolvimento (Chandramouli et al., 2024).
+        </p>
+    </section>
+
+    <section id="Benefits-Challenges">
+        <h2>Benefícios e Desafios</h2>
+
+        <h3>Benefícios</h3>
+
+        <p>
+            A adoção do DevSecOps pode proporcionar benefícios relacionados à segurança, eficiência e qualidade do processo de desenvolvimento. A integração antecipada das práticas de segurança permite identificar problemas mais cedo, enquanto a automação possibilita a aplicação consistente de verificações durante os processos de desenvolvimento e entrega. 
+        </p>
+
+        <p>
+            Além disso, a integração da segurança à cadeia de desenvolvimento pode contribuir para aumentar a visibilidade sobre componentes de terceiros e melhorar o gerenciamento dos riscos associados à cadeia de suprimentos de software (Souppaya et al., 2022). 
+        </p>
+
+        <h3>Desafios de Implementação</h3>
+
+        <p>
+            Apesar dos benefícios, a implementação do DevSecOps apresenta desafios técnicos e organizacionais. Um dos principais consiste em equilibrar a necessidade de segurança com a velocidade esperada dos processos modernos de desenvolvimento. 
+        </p>
+
+        <p>
+            A mudança também pode exigir alterações nos processos existentes, novas ferramentas e capacitação das equipes. Segundo Rajapakse et al. (2022), os desafios relacionados à adoção do DevSecOps envolvem diferentes dimensões, incluindo pessoas, práticas, ferramentas e infraestrutura. 
+        </p>
+
+        <h3>Pessoas, Processos e Tecnologias</h3>
+
+        <p>
+            A adoção do DevSecOps não depende exclusivamente da implementação de ferramentas. Aspectos culturais e organizacionais também possuem papel importante. 
+        </p>
+
+        <p>
+            Rajapakse et al. (2022) classificam os desafios identificados na literatura em quatro grandes categorias: Pessoas, Práticas, Ferramentas e Infraestrutura. Isso demonstra que a implementação do DevSecOps exige mudanças tanto tecnológicas quanto organizacionais. 
+        </p>
+
+        <p>
+            A colaboração entre desenvolvedores, profissionais de operações e equipes de segurança é particularmente importante para que a segurança seja tratada como uma responsabilidade compartilhada. 
+        </p>
+
+        <h3>Falsos Positivos e Gerenciamento de Vulnerabilidades</h3>
+
+        <p>
+            Ferramentas automatizadas de segurança podem produzir grande quantidade de resultados que precisam ser analisados pelas equipes. Quando essas ferramentas geram excesso de alertas ou falsos positivos, existe o risco de aumentar o trabalho dos desenvolvedores e dificultar a identificação dos problemas realmente relevantes.
+        </p>
+
+        <p>
+            Por esse motivo, as ferramentas utilizadas no DevSecOps precisam ser configuradas de maneira adequada e produzir resultados que possam ser efetivamente utilizados pelas equipes. A redução de ruído e a priorização baseada em risco são importantes para manter a segurança integrada ao processo sem comprometer excessivamente a produtividade (Rajapakse et al., 2022). 
+        </p>
+    </section>
+
+    <section id="Conclusion">
+        <h2>Conclusão</h2>
+
+        <p>
+            O DevSecOps representa uma abordagem relevante para integrar segurança aos processos modernos de desenvolvimento e entrega de software. Ao incorporar práticas de segurança ao longo do ciclo de vida, a abordagem busca reduzir riscos sem abandonar os princípios de agilidade e automação associados ao DevOps. 
+        </p>
+
+        <p>
+            A pesquisa demonstrou que práticas como Shift Left, automação, CI/CD e monitoramento contínuo contribuem para que a segurança seja incorporada de forma mais sistemática ao desenvolvimento. Da mesma forma, ferramentas como SAST, DAST e SCA, além de práticas relacionadas à segurança de containers, permitem avaliar diferentes componentes e etapas do processo de entrega. 
+        </p>
+
+        <p>
+            Entretanto, a adoção do DevSecOps não depende somente de ferramentas. Questões relacionadas à cultura organizacional, colaboração entre equipes, processos, infraestrutura e gerenciamento de vulnerabilidades também são importantes. Nesse sentido, referências como o NIST Secure Software Development Framework (SSDF) e as estratégias de segurança da cadeia de suprimentos fornecem orientações para estruturar práticas de desenvolvimento seguro. 
+        </p>
+
+        <p>
+            Portanto, o DevSecOps pode ser compreendido como uma evolução das práticas de desenvolvimento e operações, na qual a segurança passa a ser tratada como uma responsabilidade compartilhada e integrada ao ciclo de vida do software. Sua adoção adequada pode contribuir para que organizações mantenham processos ágeis de desenvolvimento ao mesmo tempo em que aprimoram a identificação e o gerenciamento dos riscos de segurança. 
+        </p>
+    </section>
+
+    <section id="References">
+        <h2>Referências</h2>
+
+        <p>
+            CHANDRAMOULI, R.; KAUTZ, F.; TORRES-ARIAS, S. Strategies for the Integration of Software Supply Chain Security in DevSecOps CI/CD Pipelines. NIST Special Publication 800-204D. Gaithersburg: National Institute of Standards and Technology, 2024. DOI: 10.6028/NIST.SP.800-204D. 
+        </p>
+
+        <p>
+            NIST – NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY. New Live Guidelines for Secure Software Development, Security, and Operations Practices. 2026. 
+        </p>
+
+        <p>
+            OWASP FOUNDATION. OWASP DevSecOps Guideline. 2025. Disponível em: https://owasp.org/www-project-devsecops-guideline/. Acesso em: 12 ago. 2026. 
+        </p>
+
+        <p>
+            RAJAPAKSE, R. N.; ZAHEDI, M.; BABAR, M. A.; SHEN, H. Challenges and solutions when adopting DevSecOps: A systematic review. Information and Software Technology, v. 141, 106700, 2022. DOI: 10.1016/j.infsof.2021.106700. 
+        </p>
+
+        <p>
+            SOUPPAYA, M.; MORELLO, J.; SCARFONE, K. Application Container Security Guide. NIST Special Publication 800-190. Gaithersburg: National Institute of Standards and Technology, 2017. DOI: 10.6028/NIST.SP.800-190. 
+        </p>
+
+        <p>
+            SOUPPAYA, M.; OGATA, M.; WATROBSKI, P.; SCARFONE, K. Software Supply Chain and DevOps Security Practices: Implementing a Risk-Based Approach to DevSecOps. National Institute of Standards and Technology, 2022. 
+        </p>
+    </section>
+
+    <footer id="Footer">
+        <p>Willen Favarin - Fatec Sorocaba
+            </p>
+    </footer>
+</body>
+</html>
